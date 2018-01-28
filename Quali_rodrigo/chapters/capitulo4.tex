@@ -1,0 +1,47 @@
+%\textual
+\chapter{Fase de Sincronização}
+
+A replicação é o processo no qual transações executadas em um banco de dados são propagadas de maneira assíncrona para um ou mais bancos de dados de forma serial, ou seja, significa que as transações, assim como todas as operações, são replicadas na mesma ordem na qual elas foram solicitadas. Caso isto não aconteça, podem ocorrer inconsistências entre a unidade móvel e o servidor. A propagação de forma assíncrona significa uma forma de armazenar e enviar replicação, ou seja, as operações que serão replicadas das unidades móveis podem ser armazenadas em um banco de dados local até que sejam propagadas para o servidor, no momento da sincronização, pois algumas vezes a conexão se torna impossível \cite{Rennhackkamp} \cite{ito}.
+
+A replicação é necessária para sincronizar os dados e as operações no banco de dados. Essa replicação pode ser parcial ou total. Na replicação parcial apenas uma parte dos dados de um banco de dados são replicados para outros bancos, já na replicação total todos os dados são replicados de um banco para outro \cite{ito} \cite{elmasri}.
+
+Com a replicação total, se pelo menos uma das cópias estiver disponível, a confiabilidade aumenta, uma vez que o usuário não depende apenas dos dados disponibilizados em uma única localidade. No caso de acontecer algum problema no sistema, a réplica dos dados é solicitada pelo usuário, o que contribui para o aspecto da disponibilidade da segurança da informação. Por esse motivo a replicação dos dados do servidor de sincronização com o servidor de banco de dados central da arquitetura de coleta de dados proposta utilizará uma política de replicação total \cite{ito}. A replicação parcial foi utilizada no dispositivo móvel porque a coleta de dados abrange apenas o que é necessário para a coleta, não precisando abranger todo o esquema do banco de dados.
+
+A sincronização proposta é dividida em três etapas: a captura de instruções SQL, a transferência dessas instruções para o servidor de sincronização e a utilização do protocolo SyncML. O módulo de captura de instruções SQL é responsável por capturar as instruções SQL do banco de dados do dispositivo móvel na ocorrência de alguma alteração no banco em intervalos de tempo pré-estabelecidos. O módulo de transferência de modificações faz o papel de um cliente SyncML, sincronizando as modificações do módulo de captura de instrução SQL com o servidor SyncML.
+
+\section{Módulos de Captura de Instruções SQL e de Transferência de Modificações}
+
+O módulo de captura das instruções SQL inicialmente ler um arquivo de timestamp para adquirir o último timestamp de sincronização (data e hora de quando ocorreu a última sincronização) e então começa o processo de pesquisa e captura de novas instruções SQL criadas após esse timestamp. Após a captura das novas instruções, o módulo de transferência de modificações faz a transferência dessas instruções para o servidor SyncML e o arquivo de timestamp é atualizado. Depois de um intervalo de tempo pré-estabelecido pelo administrador os módulos iniciam sua execução novamente \cite{hossain}. A Figura \ref{fig:diagrama} mostra o diagrama de fluxo destes módulos.
+
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=200pt]{images/diagrama.png}
+\caption{Diagrama de fluxo dos módulos de captura das instruções SQL e de transferência de modificações. Adaptado de [9].}
+\label{fig:diagrama}
+\end{figure}
+
+Percebe-se no diagrama de fluxo desses dois módulos que se ocorrer algum erro de conexão no momento da transferência das modificações a variável n (variável presente na estrutura condicional do diagrama de fluxo) vai possuir o valor das instruções SQL que não foram transferidas. Assim, quando a conexão com a internet se reestabelecer a transferência continua normalmente de onde parou sem causar inconsistência de dados, o que contribui para o aspecto da integridade da segurança da informação.
+
+\section{O Protocolo SyncML}
+
+O SyncML é um protocolo padrão de sincronização de dados, independente de plataforma, dispositivo e rede. Ele é baseado em tecnologia XML (Extended Markup Language) e mantido pela OMA (Open Mobile Alliance), uma aliança entre várias empresas para a criação de um protocolo comum para a sincronização de dados \cite{ericsson} \cite{ericsson2}.
+
+O protocolo SyncML é baseado na arquitetura cliente/servidor e é dividido em: protocolo de representação e protocolo de sincronização. O protocolo de representação foca na organização dos conteúdos dos dados da sincronização. Define o formato dos dados, faz a restauração (refresh), a deleção (delete), a substituição (replace), o arquivamento (archive) e etc. O protocolo de sincronização foca na administração das operações de sincronização. Define fluxo de mensagens entre um SyncML cliente e um servidor durante a sessão de sincronização de dados \cite{ericsson} \cite{ericsson2}.
+
+As vantagens do protocolo SyncML são \cite{ericsson} \cite{ericsson2} :
+
+\begin{itemize}
+\item Por ser baseado no XML, fornece um formato padrão para a descrição de dados estruturados o que gera resultados mais significativos para consultas em diferentes plataformas;
+\item Possui autenticação entre um cliente SyncML e um servidor SyncML;
+\item Suporta uma variedade de protocolos de transporte (HTTP, WSP, OBEX);
+\item Suporta uma variedade de base de dados;
+\item Funciona bem em redes com pouca banda porque os dados que serão sincronizados passam por uma técnica de codificação chamada WBXML (WAP Binary XML) gerando um formato binário do XML que possui um tamanho bem menor do que o original. Além disso, o protocolo possui um baixo número de interações pedido-resposta entre o cliente SyncML e o servidor SyncML para realizar a sincronização; 
+\item É construído sob uma tecnologia de internet e web existentes;
+\item É um protocolo padrão de sincronização de dados, independente de plataforma, dispositivo e rede;
+\item É um protocolo de sincronização livre.
+\end{itemize}
+
+O protocolo SyncML foi utilizado na arquitetura proposta porque esse protocolo promove a interoperabilidade da sincronização de dados, o que é importante para o objetivo proposto, uma arquitetura de coleta de dados que funcione em ambientes computacionais heterogêneos.
+
+Na sincronização proposta, foi utilizada a sincronização denominada uma via do cliente para o servidor, onde as modificações no banco de dados dos dispositivos móveis dos pesquisadores (clientes SyncML) são sincronizados com o servidor de sincronização (servidor SyncML) e não vice-versa, e do servidor para o cliente, onde os dados do servidor de sincronização são sincronizados com o servidor de banco de dados central (através de uma replicação de dados) e não vice-versa \cite{ericsson} \cite{ericsson2}.

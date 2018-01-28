@@ -1,0 +1,94 @@
+\message{ !name(monografia.tex)}\documentclass[mestrado]{unb-cic}
+\usepackage[american,brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+%\usepackage{natbib}
+\usepackage[utf8]{inputenc} 
+\usepackage{xcolor,graphicx,url}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+%\usepackage[dvips]{graphicx}
+
+
+\input{cores}
+\hypersetup{
+ colorlinks=true,
+ linkcolor=DarkScarletRed,
+ citecolor=DarkScarletRed,
+ filecolor=DarkScarletRed,
+ urlcolor= DarkScarletRed
+}
+
+% definições prévias do documento
+\title{Proveniência de dados na nuvem}
+
+\orientador[a]{\prof[a] \dr[a] Maristela Terto de Holanda}{CIC/UnB}
+%\coorientador{\prof \dr Henrique LLacer Roig}{IG/UnB}
+
+\coordenador{\prof \dr Ricardo Pezzoul Jacobi}{CIC/UnB}
+
+\diamesano{30}{Abril}{2013}
+                           
+\membrobanca{\prof \dr }{CIC/UnB}
+
+\membrobanca{\prof \dr }{CIC/UnB}
+
+\autor{Rodrigo Pinheiro de Almeida}{}
+\CDU{004}
+
+\palavraschave{Coleta de dados, pesquisas de campo, arquitetura, ambientes computacionais heterogêneos.}
+%\keywords{Data integration, Geospatial database, Web Service, Data Fusion, Service Oriented Architecture.}
+
+\begin{document}
+
+\message{ !name(monografia.tex) !offset(-3) }
+
+
+\maketitle
+
+\pretextual
+%\begin{dedicatoria}
+%Dedico a....
+%\end{dedicatoria}
+
+\begin{agradecimentos}
+A Deus, pois com ele tudo é possível. Aos meus pais, que se doaram por inteiro e muitas vezes renunciaram aos próprios sonhos para que eu pudesse realizar os meus. Aos meus irmãos e demais familiares que me acompanharam nessa caminhada. À Universidade de Brasília e aos professores que contribuíram para a minha formação. A minha querida orientadora Professora Maristela, pela ajuda inestimável, pelos esclarecimentos e pelas valiosas sugestões.
+\end{agradecimentos}
+
+\begin{resumo}
+O ambiente computacional baseado na comunicação sem fio, tornou possível o acesso à informação em qualquer lugar e a qualquer momento, o que é favorável para a coleta de dados em pesquisas de campo. A maioria das arquiteturas de coleta de dados existentes atendem uma causa específica, utilizando tecnologias específicas que são limitadas no que se refere ao tipo de dados, tipo de redes, tipo de sincronização e tipo de dispositivo. Esta pesquisa apresenta uma arquitetura de coleta de dados para pesquisas de campo que funciona em ambientes computacionais heterogêneos.
+\end{resumo}
+
+%\selectlanguage{american}
+
+%\begin{abstract}
+%The technological advances of the past decades associated with wireless communication, aim to make possible the access of information in any place and at any time, since this is a very propitious environment for the collection of data in field work. The most architectures of existing data collection meet a specific cause, using specific technologies that are limited with respect to data type, type of networks, synchronization type, device type, and so on. This paper presents an architecture for collecting of data in field work that can have a heterogeneous computing environment, using a data synchronization based on the SyncML protocol.
+%\end{abstract}
+
+\selectlanguage{brazil}
+\tableofcontents
+\listoffigures
+%\listoftables
+
+\textual
+
+\include{chapters/capitulo1}
+\include{chapters/capitulo2}
+\include{chapters/capitulo3}
+%\include{chapters/capitulo5}
+%\include{chapters/capitulo6}
+\include{chapters/capitulo7}
+
+\postextual
+
+
+\bibliography{bibliografia}
+
+\bibliographystyle{ieeetr}
+
+\end{document}
+
+
+
+\message{ !name(monografia.tex) !offset(-94) }

@@ -1,0 +1,264 @@
+\begin{thebibliography}{}
+
+\bibitem[Altintas et~al., 2006]{altintas}
+Altintas, I., Barney, O., and Jaeger-Frank, E. (2006).
+\newblock Provenance collection support in the kepler scientific workflow
+  system.
+\newblock pages 118--132.
+
+\bibitem[Angles, 2012]{angles}
+Angles, R. (2012).
+\newblock A comparison of current graph database models.
+\newblock In {\em Data Engineering Workshops (ICDEW), 2012 IEEE 28th
+  International Conference on}, pages 171--177. IEEE.
+
+\bibitem[Angles and Gutierrez, 2008]{angels}
+Angles, R. and Gutierrez, C. (2008).
+\newblock Survey of graph database models.
+\newblock {\em ACM Computing Surveys (CSUR)}, 40(1):1.
+
+\bibitem[Bentley, 2006]{bentley}
+Bentley, D.~R. (2006).
+\newblock Whole-genome re-sequencing.
+\newblock {\em Current opinion in genetics and development.}, 16(6):545--552.
+
+\bibitem[Buerli and Obispo, 2012]{buerli}
+Buerli, M. and Obispo, C. P. S.~L. (2012).
+\newblock The current state of graph databases.
+\newblock {\em Department of Computer Science, Cal Poly San Luis Obispo,
+  mbuerli@ calpoly. edu}.
+
+\bibitem[Buneman et~al., 2001]{buneman}
+Buneman, P., Khanna, S., and Wang-Chiew, T. (2001).
+\newblock Why and where: A characterization of data provenance.
+\newblock pages 316--330.
+
+\bibitem[Bunge, 1977]{bunge}
+Bunge, M. (1977).
+\newblock Treatise on basic philosophy: Volume 3: Ontology 1: The furniture of
+  the world.
+\newblock {\em Reidel, Boston}.
+
+\bibitem[Cassandra, 2014]{cassandra}
+Cassandra (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://cassandra.apache.org/}.
+
+\bibitem[Chang et~al., 2008]{chang2008bigtable}
+Chang, F., Dean, J., Ghemawat, S., Hsieh, W.~C., Wallach, D.~A., Burrows, M.,
+  Chandra, T., Fikes, A., and Gruber, R.~E. (2008).
+\newblock Bigtable: A distributed storage system for structured data.
+\newblock {\em ACM Transactions on Computer Systems (TOCS)}, 26(2):4.
+
+\bibitem[Costa et~al., 2013]{costa}
+Costa, F., Silva, V., de~Oliveira, D., Oca{\~n}a, K., Ogasawara, E., Dias, J.,
+  and Mattoso, M. (2013).
+\newblock Capturing and querying workflow runtime provenance with prov: a
+  practical approach.
+\newblock pages 282--289.
+
+\bibitem[CouchDB., 2014]{couchdb}
+CouchDB. (2014.).
+\newblock Disponível em: \url{http://couchdb.apache.org.}
+
+\bibitem[Davidson and Freire, 2008]{davidson}
+Davidson, S.~B. and Freire, J. (2008).
+\newblock Provenance and scientific workflows: challenges and opportunities.
+\newblock pages 1345--1350.
+
+\bibitem[de~Oliveira et~al., 2012]{oliveira}
+de~Oliveira, A. H.~M., de~Souza~Martins, M., Modesto, I., de~Oliveira, D., and
+  Mattoso, M. (2012).
+\newblock Reprodução de experimentos científicos usando nuvens.
+\newblock {\em Anais do XVII Simpósio Brasileiro de Banco de Dados (SBBD
+  2012).}
+
+\bibitem[de~Paula et~al., 2013]{renato}
+de~Paula, R., Holanda, M., Gomes, L.~S., Lifschitz, S., and Walter, M. E.~M.
+  (2013).
+\newblock Provenance in bioinformatics workflows.
+\newblock {\em BMC Bioinformatics}, 14(Suppl 11):S6.
+
+\bibitem[Dominguez-Sal et~al., 2011]{dominguez}
+Dominguez-Sal, D., Martinez-Bazan, N., Muntes-Mulero, V., Baleta, P., and
+  Larriba-Pey, J.~L. (2011).
+\newblock A discussion on the design of graph database benchmarks.
+\newblock pages 25--40.
+
+\bibitem[Dynamodb, 2014]{dynamodb}
+Dynamodb (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://aws.amazon.com/dynamodb/}.
+
+\bibitem[FlockDB, 2014]{flockDB}
+FlockDB (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{https://github.com/twitter/flockdb}.
+
+\bibitem[Fowler and Sadalage, 2013]{fowler}
+Fowler, M. and Sadalage, P.~J. (2013).
+\newblock {\em NoSQL Um Guia Conciso para o Mundo Emergente de Persistência
+  Poliglota Essencial.}
+\newblock NOVATEC, São Paulo.
+
+\bibitem[Gon{\c{c}}alves et~al., 2013]{goncalves}
+Gon{\c{c}}alves, J., de~Oliveira, D., Oca{\~n}a, K., Ogasawara, E., Dias, J.,
+  and Mattoso, M. (2013).
+\newblock Performance analysis of data filtering in scientific workflows.
+\newblock {\em Journal of Information and Data Management}, 4(1):17.
+
+\bibitem[HamsterDB, 2014]{hamsterdb}
+HamsterDB (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://hamsterdb.com/}.
+
+\bibitem[Hartig and Zhao, 2010]{zhao}
+Hartig, O. and Zhao, J. (2010).
+\newblock Publishing and consuming provenance metadata on the web of linked
+  data.
+\newblock pages 78--90.
+
+\bibitem[HBase, 2014]{hbase}
+HBase (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{https://hbase.apache.org/}.
+
+\bibitem[Imran and Hlavacs, 2013]{muhammad}
+Imran, M. and Hlavacs, H. (2013).
+\newblock Provenance framework for the cloud infrastructure: Why and how?
+\newblock {\em International Journal On Advances in Intelligent Systems}, 6(1
+  and 2):112--123.
+
+\bibitem[InfiniteGraph, 2014]{infinitegraph}
+InfiniteGraph (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://www.objectivity.com/infinitegraph}.
+
+\bibitem[Jarrard, 2001]{jarrad}
+Jarrard, R.~D. (2001).
+\newblock Disponível em:
+  \url{http://www.iibhg.ukim.edu.mk/obrazovanie/sm_all.pdf}.
+
+\bibitem[Korolev and Joshi, 2014]{korolev}
+Korolev, V. and Joshi, A. (2014).
+\newblock Prob: A tool for tracking provenance and reproducibility of big data
+  experiments.
+\newblock {\em Reproduce'14. HPCA 2014}.
+
+\bibitem[MongoDB, 2014]{mongodb}
+MongoDB (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{https://www.mongodb.org/}.
+
+\bibitem[Moreau et~al., 2009]{moreau}
+Moreau, L., Freire, J., Futrelle, J., Myers, J., and Paulson, P. (2009).
+\newblock Governance of the open provenance model.
+\newblock {\em URL http://twiki. ipaw. info/pub/OPM/WebHome/governance. pdf}.
+
+\bibitem[Muniswamy-Reddy et~al., 2010]{kiran}
+Muniswamy-Reddy, K.-K., Macko, P., and Seltzer, M.~I. (2010).
+\newblock Provenance for the cloud.
+\newblock In {\em FAST}, volume~10, pages 15--14.
+
+\bibitem[Muniswamy-Reddy and Seltzer, 2010]{muniswamy}
+Muniswamy-Reddy, K.-K. and Seltzer, M. (2010).
+\newblock Provenance as first class cloud data.
+\newblock {\em ACM SIGOPS Operating Systems Review}, 43(4):11--16.
+
+\bibitem[Neo4J, 2014]{neo4j}
+Neo4J (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://www.neo4j.org/learn/neo4j}.
+
+\bibitem[Olson et~al., 1999]{berkeley}
+Olson, M.~A., Bostic, K., and Seltzer, M.~I. (1999).
+\newblock Berkeley db.
+\newblock pages 183--191.
+
+\bibitem[Padhy et~al., 2011]{rabi}
+Padhy, R.~P., Patra, M.~R., and Satapathy, S.~C. (2011).
+\newblock Rdbms to nosql: Reviewing some next-generation non-relational
+  database's.
+\newblock {\em International Journal of Advanced Engineering and
+  Technologies.}, 11(1):015--030.
+
+\bibitem[Partner et~al., 2013]{partner2013neo4j}
+Partner, J., Vukotic, A., and Watt, N. (2013).
+\newblock {\em Neo4j in Action}.
+\newblock O'Reilly Media.
+
+\bibitem[Paulino et~al., 2010]{paulino}
+Paulino, C., Oliveira, D., Cruz, S., Campos, M. L.~M., and Mattoso, M. (2010).
+\newblock Captura de metadados de proveni{\^e}ncia para workflows
+  cient{\'\i}ficos em nuvens computacionais.
+\newblock {\em Anais do XXV Simp{\'o}sio Brasileiro de Banco de Dados}.
+
+\bibitem[Pinheiro et~al., 2013]{rodrigo}
+Pinheiro, R., Holanda, M., Araujo, F., Walter, E., and Lifschitz, S. (2013).
+\newblock Automatic capture of provenance data in genome project workflows.
+\newblock {\em Bioinformatics and Biomedicine (BIBM), 2013 IEEE International
+  Conference on}, pages 15 -- 20.
+
+\bibitem[Ram and Liu, 2007]{ram}
+Ram, S. and Liu, J. (2007).
+\newblock Understanding the semantics of data provenance to support active
+  conceptual modeling.
+\newblock In {\em Active conceptual modeling of learning}, pages 17--29.
+  Springer.
+
+\bibitem[RavenDB, 2014]{ravendb}
+RavenDB (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{https://ravendb.net/}.
+
+\bibitem[Redis, 2014]{redis}
+Redis (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://redis.io/}.
+
+\bibitem[Riak, 2014]{riak}
+Riak (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://basho.com/riak/}.
+
+\bibitem[Rothberg and Leamon, 2008]{rothberg}
+Rothberg, J.~M. and Leamon, J.~H. (2008).
+\newblock The development and impact of 454 sequencing.
+\newblock {\em Nature biotechnology}, 26(10):1117--1124.
+
+\bibitem[Sahoo and Sheth, 2009]{sahoo}
+Sahoo, S.~S. and Sheth, A. (2009).
+\newblock Provenir ontology: Towards a framework for escience provenance
+  management.
+
+\bibitem[Schuster, 2007]{schuster}
+Schuster, S.~C. (2007).
+\newblock Next-generation sequencing transforms today’s biology.
+\newblock {\em Nature}, 200(8).
+
+\bibitem[Sousa et~al., 2010]{sousa}
+Sousa, F.~R., Moreira, L.~O., de~Mac{\^e}do, J. A.~F., and Machado, J.~C.
+  (2010).
+\newblock Gerenciamento de dados em nuvem: Conceitos, sistemas e desafios.
+\newblock {\em Topicos em sistemas colaborativos, interativos, multimidia, web
+  e bancos de dados, Sociedade Brasileira de Computacao}, pages 101--130.
+
+\bibitem[Tan, 2004]{tan}
+Tan, W.~C. (2004).
+\newblock Research problems in data provenance.
+\newblock {\em IEEE Data Eng. Bull.}, 27(4):45--52.
+
+\bibitem[UNIPROT, 2012]{uniprot}
+UNIPROT (2012).
+\newblock Disponível em: \url{http://www.uniprot.org}.
+
+\bibitem[Vicknair et~al., 2010]{chad}
+Vicknair, C., Macias, M., Zhao, Z., Nan, X., Chen, Y., and Wilkins, D. (2010).
+\newblock A comparison of a graph database and a relational database: a data
+  provenance perspective.
+\newblock page~42.
+
+\bibitem[Voldemort, 2014]{pvoldemort}
+Voldemort, P. (Acessado em: 06 de Abril de 2014.).
+\newblock Disponível em: \url{http://www.project-voldemort.com/voldemort/}.
+
+\bibitem[W3C, 2014]{w3c}
+W3C (Acessado em 06 de Abril de 2014.).
+\newblock Disponível em: \url{www.w3.org/TR/prov-dm/}.
+
+\bibitem[Woodman et~al., 2011]{simon}
+Woodman, S., Hiden, H., Watson, P., and Missier, P. (2011).
+\newblock Achieving reproducibility by combining provenance with service and
+  workflow versioning.
+\newblock pages 127--136.
+
+\end{thebibliography}

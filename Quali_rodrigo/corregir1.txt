@@ -1,0 +1,12 @@
+1)mejorar introdução no parrafo 4. Falta falar sobre a heterogeneidade 
+e duplicação de dados,  que é o problema principal de trabalho.
+
+o REST é tipo um webservice, permite recuperar, conseguir
+
+2) corregir nombre de figura 3.2 a figura 3.1 de SOA-SDI. lo mismo 
+para la figura 3.3 a figura 3.2 em VIRTUAL DATABASE. LO MISMO PARA
+la figura 6 a figura 3.3 de la INDE
+
+3) quitar do dessenvolvimento da proposta o último parrafo, essa que
+fala sobre o REST
+

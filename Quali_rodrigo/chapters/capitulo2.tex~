@@ -1,0 +1,142 @@
+%\textual
+\chapter{Banco de Dados Biológicos}
+\section{Conceitos Básicos de Bilogia Molecular}
+\subsection{A Vida}
+Segundo a ciência moderna a vida se originou há bilhões de anos com formas de vida muito simples, mas com o percorrer do tempo estes organismos foram mudando sua aparência e suas estrutura biológica por um processo denominado evolução para depois dar origem aos organismos mais complexos que podem ser encontrados na atualidade.
+
+
+Os organismos simples, assim como os complexos, possuem uma química molecular básica, onde os elementos mais importantes são as proteínas e os ácidos nucléicos. De forma geral as proteínas são as responsáveis por o que um ser vivo é e faz num sentido físico funcional, por outro lado os ácidos nucléicos são os encarregados de codificar essa informação para produzir proteínas e como mecanismos de armazenamento para preservar a continuidade dos diferentes organismos.
+
+\subsection{Proteína}
+Todos os organismos na natureza na sua maioria estão feitas de proteínas que são cadeias de moléculas chamadas aminoácidos. Um aminoácidos tem sua estrutura química geral representada pela Figura 2.1. Na  natureza existem muitos aminoácidos mas no corpo humanos só são usados 20 aminoácidos que são denominados primários.
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=300]{./chapters/grafico02/aminoacido.jpeg}
+  \end{center}
+  \caption{Estrutura geral dos aminoácidos}
+  \label{fig:ejemplo}
+\end{figure}
+
+Para a formação das proteínas, dois aminoácidos são combinados através de uma reação de sínteses  por desidratação (gera uma molécula de água por cada união), onde o carbono do grupo carboxila de um aminoácidos liga-se ao átomo de nitrogênio do grupo amina do outro aminoácidos, gerando uma molécula de água neste processo,  esse tipo de ligação é chamada de ligação peptídica criando resíduos de aminoácidos que formaram as proteínas. A proteína não é só uma sequência linear de resíduos, essa sequência é conhecida de estrutura primária, mas  se tem a estrutura secundária, terciária, e quaternária  formam a estrutura tridimensional da proteína Figura 2.2.
+
+
+
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=280]{./chapters/grafico02/estrutura_proteina.jpeg}
+  \end{center}  
+  \caption{Estrutura primária, secundária, terciária e quaternária da molécula da hemoglobina}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{Ácidos Nucléicos }
+Os seres vivos tem dois tipos de ácidos nucléicos: ácido ribonucléico ou RNA e o ácido desoxirribonucléico ou DNA. Os ácidos nucléicos são polímeros compostos de moléculas mais simples, os nucleotídeos. A estrutura dos nucleotídeos é mostrada na Figura 2.3.
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=100]{./chapters/grafico02/estrutura_nucleotideo.jpeg}
+  \end{center}  
+  \caption{Estrutura de um nucleotídeo com seus componentes : Açúcar, fosfato, e base.}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{DNA}
+O DNA é um ácido nucléico, que tem a função biológica de armazenar  a informação  necessária para a sínteses das proteínas  e do RNA assim como  é responsável por armazenar o código genético (genes). A cadeia de DNA está formada por uma molécula de açúcar chamada 2'-Desoxirribose, um grupo fosfato e uma base. As bases são  a Adenina (A), Timina (T), Citocina (C), Guanina (G). A  Figura 2.4 mostra as diferentes bases.
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=220]{./chapters/grafico02/moleculas_dna.jpeg}
+  \end{center}  
+  \caption{As quatro moléculas do DNA e a molécula de Uracila (U)}
+  \label{fig:ejemplo}
+\end{figure}
+A molécula de DNA é de dupla fita. As duas fitas formam uma estrutura de hélice (Figura 2.5) descoberto por James Watson e Francis Crick em 1953.  A dupla fita se mantém dessa forma graças às uniões entre duas bases cada uma de uma fita diferente,  essa união acontece graças à natureza complementar das bases, neste caso as bases púricas (A e T) se unem com as bases pirimidinas (C e T). A base A une-se com a base T e  a base C une-se com a base G.
+
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=270]{./chapters/grafico02/dupla_dna.jpeg}
+  \end{center}  
+  \caption{A dupla Hélice do DNA mostrando a união das moléculas}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{RNA}
+O RNA é um aminoácidos como o DNA com certas diferenças e funcionalidades específicas. O RNA é formado pela açúcar Ribose a diferencia do DNA que tem a 2' – desoxirribose. Esta molécula está composta por uma base nitrogenada além das já descritas, esta base é a Uracila (U) que substitui a Timina (T). Outra diferencia com o DNA é que só tem uma cadeia ou fita única de nucleotídeos (ver Figura 2.6), tendo diferentes formatos de acordo com a função que pode exercer.
+
+
+Os RNA presentes nos organismos tem funções diferentes como por exemplo, o RNA mensageiro, responsável por armazenar as informações  para a síntese das proteínas. O RNA ribossômico é responsável pela constituição de ribossomos. 
+
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=200]{./chapters/grafico02/estrutura_rna.jpeg}
+  \end{center}  
+  \caption{Estrutura do RNA}
+  \label{fig:ejemplo}
+\end{figure}
+
+\section{Bioinformática}
+A bioinformática é um campo interdisciplinar envolvendo as áreas de Biologia Molecular, Estatística, Matemática e Ciência da Computação com o objetivo de realizar a análise de dados biológicos, entre eles sequências de bases de DNA e genes, e predizer a estrutura e função de diversas macromoléculas.
+
+
+A bioinformática enfatiza o desenvolvimento de ferramentas para realizar o armazenamento e manipulação dos dados biológicos gerados durante um projeto de sequenciamento. Com o atual volume de dados produzidos pelos projetos de sequenciamento, a utilização de ferramentas computacionais traz  grandes auxílios aos biólogos, ao permitir a recuperação rápida dos dados armazenados de um projeto genoma e apresentar os resultados de maneira a facilitar a análise dos mesmos e assim auxiliar na descoberta de funções para as sequências obtidas.
+
+\newpage
+
+\subsection{Sequenciamento de Genoma}
+\subsubsection{Sequenciamento de Alto Desempenho}
+\textit{Pipeline} é um modelo de arquitetura no qual ocorre a divisão de um processamento
+sequencial em etapas. A ideia fundamental desse modelo é que dados gerados pelo processamento de uma etapa sirvam como entrada para a próxima etapa, formando-se desse modo uma dependência de um processo por um anterior e consequentemente o próximo dependerá do atual processo [\citenum{20}]. 
+
+
+Os projetos de sequenciamentos têm em geral  três fases (ver Figura 2.7) significativas: submissão, montagem e anotação. A submissão consiste no recebimento dos dados resultantes do processo de sequenciamento e no armazenamento de tais dados em um formato adequado para posteriores processamento desses dados. Nesta fase pode se conseguir vários dados importantes, mas destaca-se a sequência de bases obtidas pelo sequenciador, onde essas sequências são armazenadas geralmente em arquivos de texto contendo uma sequência de letras e os valores de qualidade para cada base das sequências. O valor de qualidade tem como objetivo discriminar a probabilidade de erro de estar correto uma base da cadeia de DNA.
+
+
+A próxima fase após  a submissão é a etapa de montagem. Esta etapa consiste  no uso de um ou mais programas para tentar unir os diversos fragmentos de DNA obtidas durante a fase anterior para dessa forma tentar  recriar as sequência originais de DNA. Esta fase enfrenta o problema que nem sempre consegue-se remontar perfeitamente o DNA fragmentado. Sequência de DNA (consenso) obtidas pela união de dois ou mais fragmentos (\textit{contigs}), e  sequências não agrupadas com outras (\textit{singlets}).
+
+
+A última fase do \textit{pipeline} é a fase de anotação, onde os objetivos principais são descobrir as diversas funções biológicas do DNA sequenciado, bem como identificar genes ainda não descobertos, entre outras importantes funções. Para realizar essas tarefas, em geral  a anotação é dividida em duas etapas distintas. A anotação automática é executada primeiro e consiste em tentar inferir as funções biológicas das sequência de DNA através de métodos computacionais. Não obstante, a técnica mais comumente empregada neste passo consiste no uso de programas para comparação das sequências obtidas com bancos de dados contendo sequências cujas funções já são conhecidas, tais como o BLAST [\citenum{1}]. Esses bancos de dados contém um número imenso de sequências, e crescem diariamente. Feita a anotação automática, procede-se a anotação manual. Nesta etapa, os biólogos verificam as inferências feitas durante a anotação automática e as utilizam como um guia para a análise das sequências. Os biólogos podem confirmar, mudar ou recusar as sugestões das anotações automáticas. As sugestões também podem ser utilizadas para a realização de experimentos significativos ao trabalho de pesquisa do organismo. 
+
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=200]{./chapters/grafico02/pipeline_sequenciador1.jpeg}
+  \end{center}  
+  \caption{\textit{Pipeline} com submissão, montagem e anotação}
+  \label{fig:ejemplo}
+\end{figure}
+
+Com o uso de sequenciador de alto desempenho tais como Illumina Solexa e 454-Roche são obtidas sequências relativamente curtas em relação ao sequenciamento tradicional, isso torna impossível o uso das técnica tradicionais para reagrupar os fragmentados sequenciados no DNA original (montagem). Neste contexto uma fase chamada de mapeamento será usada para efetuar  adaptações aos dados obtidos na fase de submissão para depois continuar com a fase de montagem ou incorporá-lo dentro da fase de mapeamento como mostrada na Figura 2.8. Na fase de mapeamento tem-se algumas abordagens, uma dela é usar um genoma de referência, normalmente  um organismo próximo cujo genoma já seja conhecido. Dado esse genoma, de forma geral pode se agrupar as pequenas sequências conforme a posição das mesmas no mapeamento. Outra abordagem seria usar uma biblioteca de exons como sequências de referências para verificação de \textit{splicing} alternativo a partir de sequenciamentos de RNAs pequenos (35 a 80 bases de comprimento).
+
+
+\begin{figure}[ht]
+  \begin{center}
+  \includegraphics[width=200]{./chapters/grafico02/pipeline_sequenciador1.jpeg}
+  \end{center}  
+  \caption{\textit{Pipeline} de software para novos sequenciadores com a fase de mapeamento.}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{Banco de Dados Biólogos}
+Desde o descobrimento da estrutura do DNA em 1953 a Biologia Molecular (BM) tem conseguido grandes avanços. Neste campo de pesquisa se estuda os organismos para entender seus mecanismos de funcionalidade em nível molecular [\citenum{2}]. A bioinformática   que se limitava a armazenar e organizar dados por meio de ferramentas computacionais avançadas, provê ferramentas práticas para administração e análises de informação genômica  e análises de  sequência [\citenum{3}].
+
+
+Com o avanço da tecnologia, existem cada vez mais sequências e anotações e não é possível determinar a quantidade de informação que ainda será obtida. Naturalmente   neste contexto as sequências estão na atenção na BM pela sua função de  meio de armazenamento de informação biológica de um organismo a qual é codificada em sequências de bases (A = Adenina, T = Timina , C = Citosina e G = Guanina). Por exemplo, a sequência de DNA do genoma humano contém por volta de 3 bilhões de pares de bases. Para estas sequências, sejam de DNA, RNA,  ou proteínas, existem banco de dados públicos como o Laboratório Europeu de Biologia Molecular (EMBL) que armazena as sequências de nucleotídeos, atualmente contendo cerca de 196,872,052 de entradas [\citenum{5}]. O Banco de dados do Japão (DDBJ)  e GenBank da NCBI que são  repositórios públicos de sequências com amplo uso na bioinformática e  SWISS-PROT que armazena  proteínas. Esses bancos de dados de sequências continuamente mudam e atualizam seus dados.
+
+\subsection{Modelagem de Dados para Bioinformática}
+
+A complexidade de um projeto e dos dados que se quer modelar, pode tornar a tarefa de modelagem de dados muito difícil. Os projetos  em quaisquer área de pesquisa precisam de  representar os seus dados, os quais devem gerar conhecimentos. A bioinformática tem este problema ainda pior pelo fato de trabalhar  com dados muitos complexos que torna qualquer projeto desta área um desafio em termo de representação e administração dos dados. 
+
+
+Uma  das primeiras  ações no desenvolvimento de um projeto de banco de dados é a escolha de um sistema de banco de dados adequado, a escolha normalmente está baseada na experiência, conhecimento e  trabalhos similares já feitos com sucesso, tendo uma ideia de que sistema de banco de dados vai ser usado, o seguinte passo é determinar quais dados serão armazenados e como serão organizados. 
+
+
+O modelo de dados é uma coleção de ferramentas  conceituais para a descrição de dados, as relações entre os dados, a semântica dos dados e as restrições inerente ao dados [\citenum{6}]. Uma outra definição de modelo de dados diz que um modelo de dados é um conjunto de conceitos que podem ser usados para descrever a estrutura de um banco de dados [\citenum{7}]. De maneira geral, o modelo de dados representa objeto da realidade que tem sentido para um problema específico.
+	%texto.... referência \citenum{autor2010}
+		
+
+
+
+ 
+
+	
+

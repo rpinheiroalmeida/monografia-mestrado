@@ -1,0 +1,114 @@
+\documentclass[mestrado]{unb-cic}
+\usepackage[american,brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{indentfirst}
+\usepackage{verbatim}
+%\usepackage{natbib}
+\usepackage[utf8]{inputenc} 
+\usepackage{xcolor,graphicx,url}
+\setcounter{secnumdepth}{5}
+\setcounter{tocdepth}{5}
+%\usepackage[dvips]{graphicx}
+
+\input{cores}
+\hypersetup{
+ colorlinks=true,
+ linkcolor=DarkScarletRed,
+ citecolor=DarkScarletRed,
+ filecolor=DarkScarletRed,
+ urlcolor= DarkScarletRed
+}
+
+% definições prévias do documento
+\title{Proveniência de dados em workflow de Bioinformática
+  com PROV-DM e armazenamento em banco de dados baseado em grafo}
+
+\orientador[a]{\prof[a] \dr[a] Maristela Terto de Holanda}{CIC/UnB}
+%\coorientador{\prof \dr Henrique LLacer Roig}{IG/UnB}
+
+\coordenador{\prof \dr Ricardo Pezzoul Jacobi}{CIC/UnB}
+
+\diamesano{25}{Fevereiro}{2014}
+                           
+\membrobanca{\prof \dr }{CIC/UnB}
+
+\membrobanca{\prof \dr }{CIC/UnB}
+
+\autor{Rodrigo Pinheiro de}{Almeida}
+\CDU{004}
+
+\palavraschave{Proveniência de dados, computação em nuvem, NoSql, Neo4J.}
+%\keywords{Data integration, Geospatial database, Web Service, Data Fusion, Service Oriented Architecture.}
+
+\begin{document}
+
+\maketitle
+
+\pretextual
+%\begin{dedicatoria}
+%Dedico a....
+%\end{dedicatoria}
+
+\begin{agradecimentos}
+Primeiramento a Deus, pela saúde e força de vontade. A minha esposa
+Thayres que esteve sempre ao meu lado, me estimulando e encorajando
+nos momentos de fraqueza. A minha orientadora \prof[a] \dr[a]
+Maristela Terto de Holanda pelas sábias orientações, ajuda
+inestimável, paciência e principalmente pela oportunidade
+dada. E em especial aos meus pais e minha tia Maria de Lurdes, que sem
+eles nada disso seria possível.
+
+\end{agradecimentos}
+
+\begin{resumo}
+Muitos experimentos científicos na bioinformática são executados como
+\textit{workflows} computacionais. Cada vez mais, esses experimentos estão sendo
+executados em ambientes de computação em nuvem devido as facilidades
+oferecidas. Para a validação e reconhecimento de um experimento é
+necessário reexecutá-lo sob as mesmas circustâncias que foi originado
+em um ambiente de computação em nuvem, algumas informações
+importantes para reexecução de um experimento são ocultadas, portanto
+sendo necessário realizar a proveniência dos dados para obter
+metadados importantes sobre o ambiente e execução dos
+experimentos. Contudo, os bancos de dados relacionais não apresentam
+um bom desempenho em ambientes de nuvens computacionais, originando um novo paradigma de
+bancos de dados, os \textit{NoSQL}. Esta pesquisa apresenta uma
+arquitetura capaz de realizar a proveniência de dados de experimentos
+científicos na bioinformática utilizando o modelo PROV-DM em ambientes
+de nuvens computacionais e armazenando os metadados de proveniência em
+bancos de dados \textit{NoSQL}
+
+\end{resumo}
+
+%\selectlanguage{american}
+
+%\begin{abstract}
+%The technological advances of the past decades associated with wireless communication, aim to make possible the access of information in any place and at any time, since this is a very propitious environment for the collection of data in field work. The most architectures of existing data collection meet a specific cause, using specific technologies that are limited with respect to data type, type of networks, synchronization type, device type, and so on. This paper presents an architecture for collecting of data in field work that can have a heterogeneous computing environment, using a data synchronization based on the SyncML protocol.
+%\end{abstract}
+
+\selectlanguage{brazil}
+\tableofcontents
+\listoffigures
+%\listoftables
+
+\textual
+
+\include{chapters/capitulo1}
+\include{chapters/capitulo2}
+\include{chapters/capitulo3}
+\include{chapters/capitulo5}
+%\include{chapters/capitulo6}
+%\include{chapters/capitulo7}
+
+\postextual
+
+
+\bibliography{bibliografia}
+%\bibliographystyle{ieeetr}
+\bibliographystyle{apalike}
+%\bibliographystyle{authordate1} 
+%\bibliographystyle{aaai-named}
+
+\end{document}
+
+

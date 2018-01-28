@@ -1,0 +1,61 @@
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: monografia.aux
+A level-1 auxiliary file: chapters/capitulo1.aux
+A level-1 auxiliary file: chapters/capitulo2.aux
+A level-1 auxiliary file: chapters/capitulo3.aux
+A level-1 auxiliary file: chapters/capitulo5.aux
+The style file: apalike.bst
+Database file #1: bibliografia.bib
+Warning--empty journal in altintas
+Warning--empty journal in buneman
+Warning--empty journal in costa
+Warning--empty journal in davidson
+Warning--empty journal in dominguez
+Warning--empty journal in zhao
+Warning--empty journal in berkeley
+Warning--empty journal in sahoo
+Warning--empty journal in chad
+Warning--empty journal in simon
+You've used 50 entries,
+            1935 wiz_defined-function locations,
+            717 strings with 11023 characters,
+and the built_in function-call counts, 18666 in all, are:
+= -- 1845
+> -- 764
+< -- 47
++ -- 264
+- -- 254
+* -- 1449
+:= -- 3262
+add.period$ -- 135
+call.type$ -- 50
+change.case$ -- 359
+chr.to.int$ -- 50
+cite$ -- 60
+duplicate$ -- 756
+empty$ -- 1218
+format.name$ -- 326
+if$ -- 3665
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 36
+newline$ -- 236
+num.names$ -- 150
+pop$ -- 374
+preamble$ -- 1
+purify$ -- 377
+quote$ -- 0
+skip$ -- 618
+stack$ -- 0
+substring$ -- 1164
+swap$ -- 141
+text.length$ -- 15
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 296
+warning$ -- 10
+while$ -- 155
+width$ -- 0
+write$ -- 588
+(There were 10 warnings)

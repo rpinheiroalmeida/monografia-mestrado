@@ -1,0 +1,50 @@
+%\textual
+\chapter{Introdução}
+%[\cite{19}]
+%[\citenum{1}]
+\section{Contextualização} 
+
+Projetos de Bioinformática consistem na execução de diversos experimentos com sequências de DNA ou RNA obtidas por sequenciadores de alto desempenho tais como \textit{Illumina} \cite{bentley} ou 454 \textit{Roche} \cite{rothberg}. Estes equipamentos são capazes de gerar, em poucas horas, milhões de fragmentos de DNA \cite{schuster} que precisam ser analisados. Esses milhões de fragmentos podem gerar \textit{terabytes} de dados, que são armazenados em diferentes arquivos com diversos formatos e envolvem a utilização de diferentes ferramentas computacionais cujas configurações e parâmetros de entrada podem afetar fortemente os resultados obtidos.
+
+O gerenciamento da execução desses experimentos é realizada normalmente através de um \textit{workflow} científico, que é uma abstração que define as etapas de execução de um experimento e a sequência em que tais etapas ocorrem, de forma a corroborar ou refutar uma hipótese científica \cite{jarrad}. Cada etapa (i.e atividade do \textit{workflow}) envolve a execução de diversos programas, que são responsáveis pela transformação dos dados de entrada e a produção de dados de saída. Entretanto para que um experimento seja válido sob o ponto de vista científico, o seu resultado deve ser passível de reprodução por terceiros, logo é importante armazenar dados tanto do ambiente de execução quanto dos experimentos propriamente ditos. Estes dados podem ser obtidos a partir de dados de proveniência seja em ambientes centralizados ou distribuídos \cite{altintas}. 
+
+A proveniência de dados visa descrever os acontecimentos e insumos utilizados na geração de uma determinada informação. Segundo \cite{buneman} proveniência de dados é ''... a descrição das origens de uma peça de dados e do processo pelo qual ela chegou em um banco de dados.'' (livre tradução), ou seja, para garantir a proveniência de dados se faz necessário guardar tanto a origem dos dados utilizados como matéria-prima, quanto os processos que transformaram estes dados no produto final.
+
+Com o objetivo de fornecer uma estrutura para os dados de proveniência, facilitando o armazenamento e a recuperação são criados modelos, que definem como as informações são representadas. Existem na literatura alguns modelos de dados para a proveniência de dados. Logo, ao manipular dados de proveniência é necessário saber as informações de proveniência suportadas e o modo como estas informações serão acessadas. Para uma definição e comparação mais detalhadas dos modelos de proveniência pode-se ver em \cite{renato}.  
+
+Dentre os modelos de proveniência presentes na literatura, o PROV-DM tem se destacado, já que o principal objetivo é descrever as pessoas, recursos e atividades envolvidas na produção de uma peça de dado, criando condições para que a proveniência seja demonstrada e trocada entre diferentes sistemas.
+
+O ambiente de computação em nuvem tem se tornado atraente para a execução de experimentos científicos devido a escabilidade, interoperabilidade e a idéia de recursos infinitos. Porém, informações como \textit{cluster}, nodos, bancos de dados usados, parâmetros de entrada e saída, tempo de execução, métodos invocados e processos iniciados e finalizados são importantes, porque há a necessidade de validar o experimento e reproduzí-lo.
+
+Para um ambiente tão heterogêneo, distribuído e de alta disponibilidade como o de computação em nuvens, os bancos relacionais não apresentam um bom desempenho, surgindo os bancos de dados \textit{NoSQL}, que gerenciam grades volumes de dados e, em geral, fornecem garantias de consistência fraca, estruturas e interfaces simples. Como um tipo de bancos de dados \textit{NoSQL}, se destacam os bancos de dados de grafos que permitem o armazenamento de entidades e também relacionamentos entre essas entidades.
+% MELHORAR A INTRODUÇÃO DE BANCOS DE DADOS DE GRAFOS NO PARÁGRAFO ÀCIMA.
+
+Já existem trabalhos na literatura que ressaltam a importância da proveniência de dados no ambiente de computação em nuvem, como em \cite{muhammad} e em projetos de Bioinformática, como pode ser visto em \cite{kiran}. Portanto, esse trabalho propõe realizar a proveniência de dados em projetos de Bioinformática utilizando o modelo PROV-DM, armazenando os dados em bancos de dados de grafos no ambiente de computação em nuvem.
+
+\section{Objetivos}
+
+Esse trabalho propõe a definição de uma arquitetura de proveniência de dados para um ambiente de computação em nuvem no contexto da Bioinformática, utilizando o modelo de proveniência PROV-DM e bancos de dados de grafo.
+
+
+\subsection{Objetivos Específicos}
+
+No intuito de atingir o objetivo geral, foram definidos alguns objetivos específicos:
+
+\begin{itemize}
+\item Definir uma arquitetura de proveniência de dados para um ambiente de computação em nuvem em projetos de Bioinformática, utilizando bancos de dados de grafos;
+\item Implementar a arquitetura proposta;
+\item Realizar estudo de caso com \textit{workflows} científicos reais da Bioinformática;
+\item Avaliar os resultados obtidos.
+\end{itemize}
+
+%\item Validar a arquitetura em uma coleta de dados em campo real realizada pelo Instituto de Geociência da Universidade de Brasília.%
+
+\section{Estrutura do Trabalho}
+
+Este documento está estruturado nos capítulos a seguir:
+
+\begin{itemize}
+\item O Capítulo 2 apresenta o referencial teórico necessário para o desenvolvimento desa pesquisa, tais como a proveniência de dados, o modelo PROV-DM, o armazenamento de dados na nuvem baseados em \textit{NoSQL} e os trabalhos relacionados.
+\item O Capítulo 3 define uma política de proveniência de dados para um ambiente de computação em nuvem no contexto da Bioinformática.
+\item Capítulo 4, apresenta a metodologia e o cronograma de trabalho.
+\end{itemize}

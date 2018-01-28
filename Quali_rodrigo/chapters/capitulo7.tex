@@ -1,0 +1,11 @@
+\chapter{Conclusão}
+
+As arquiteturas de coleta de dados existentes atendem uma causa específica, utilizando tecnologias específicas que são limitadas no que se refere a tipo de dados, tipo de redes, tipo de sincronização, tipo de dispositivo e etc. Para cada contexto de coleta de dados diferente é proposto uma arquitetura de coleta de dados diferente limitada ao orçamento, ao ambiente computacional e a tecnologia disponível na empresa ou organização.
+
+A arquitetura proposta por este trabalho foi uma arquitetura de coleta de dados para pesquisas de campo em ambientes computacionais heterogêneos onde as informações armazenadas em cada dispositivo móvel são replicadas e corretamente integradas em um banco de dados central. Para chegar a esse objetivo era necessário que a arquitetura obedecesse a dois aspectos: a interoperabilidade e a flexibilidade. Essa arquitetura obedece o aspecto da interoperabilidade, através da utilização do protocolo de sincronização \textit{SyncML}, e o aspecto da flexibilidade, através da replicação total de dados, da existência de um servidor intermediário de sincronização e por ser o \textit{SyncML} um protocolo livre. Além disso, a arquitetura utiliza alguns mecanismos de segurança como tolerância a falhas, replicação total de dados e autenticação.
+
+O estudo de caso realizado foi submetido a três diferentes testes relacionados com a performance da arquitetura e com a consistência dos dados na sincronização entre o dispositivo móvel e o servidor de banco de dados central. Em todos os testes realizados a arquitetura obteve um resultado positivo.
+
+Com uma arquitetura desse tipo, não é mais necessário planejar uma arquitetura sempre que for fazer uma coleta de dados em campo, basta usar a arquitetura proposta, que além de funcionar em ambientes heterogêneos, é de baixo custo e de qualidade.
+
+A arquitetura proposta ainda será testada no campo. Esse teste será realizado com o apoio do Instituto de Geociências da Universidade de Brasília e consiste na coleta de dados geológicos em diversas cidades do Brasil.

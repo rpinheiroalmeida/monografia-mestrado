@@ -1,0 +1,201 @@
+%\textual
+\chapter{Estúdio da Arte}
+
+\section{Modelos de Dados para Bioinformática} 
+
+A correta representação e manipulação dos dados biológicos permitindo os cientistas administrar, manipular e analisar esses dados de forma de gerar conhecimento é fundamental nas pesquisas biológicas. Neste contexto, os biólogos e os pesquisadores  que trabalham na bioinformática tem disponível na literatura algumas abordagens para representação de dados biológicos, porém ainda com limitações.
+
+Os modelos de dados de alto nível tem como objetivo representar objetos da vida real de maneira geral, os objetos são modelados como entidades e as suas interligações como relacionamento [\cite{6,7}]. De fato, todas as abordagens de uma forma ou de outra representam esses conceitos de entidades e seus relacionamentos através de características próprias das abordagens [\citenum{8,7,12,16}]. 
+
+O modelo entidade relacionamento (MER) surgiu na década de 70 com a característica mais importante de representar os objetos da vida real por entidades e a relação que existe entre eles através de relacionamentos [\citenum{6,7}]. O modelo entidade relacionamento é um modelo muito usado até hoje, mas tem  muitas limitações para representar dados complexos como os dados biológicos.
+
+Outras propostas baseadas no MER foram apresentadas na literatura, entre elas destaca-se o Modelo de Entidades Relacionamento Estendido (EER – \textit{Enhanced Entity Relationship}) que tem algumas características  que eliminam muitas das limitações do modelo entidade relacionamento, mas ainda não e possível representar facilmente os dados do domínio da bioinformática uma vez que esses modelos foram realizados para aplicações clássicas[\citenum{8}].
+O modelo relacional é muito utilizado pela organizações nos diversos ramos da computação. O modelo está baseado em tabelas ou relacionamentos, onde cada linha na tabela representa uma coleção de valores de dados relacionados [\citenum{6}]. Da mesma forma que os modelo ER e EER o objetivo principal é a representação de fatos do mundo [\citenum{7}], mas com a visão de implementação em sistemas gerenciadores de banco de dados relacional. Este  modelo tem sérios inconvenientes para representar dados biológicos  tal como esquemas complexos para representar objetos como genes, observando linhas sem valores o que faz  necessário decompor tais dados em outras tabelas gerando um relacionamento entre muitas tabelas, aumentando significativamente  o número de tabelas tornando-o difícil de entender [\citenum{9}]. 
+
+Estes problemas são superados pelo modelo orientado a objetos (OOM) pela  sua capacidade de representação de dados complexos, este paradigma é apropriado para a modelagem de dados complexos como por exemplo dados biológicos, onde as estruturas de dados permitem ser mapeadas diretamente [\citenum{11}]. Além disto o modelo orientado a objetos resolve restrições de dependência, assim como faz uso de tipos de dados ordenados que são muito úteis para representar sequências de nucleotídeos e proteínas [\citenum{12}], mas ainda tendo este potencial o modelo orientado a objetos não consegue resolver todos os problemas para representar dados biológicos. Por outro lado o modelo objeto relacional (ORM) consegue aproveitar as vantagens do modelo OO e as vantagens do MR, dessa forma aproveita as facilidades de consulta inerente do modelo relacional com o tratamento de dados complexos do modelo orientado a objetos [\citnum{6,12}]. Criando um modelo híbrido que permite ao usuário  implementar consultas usando funções e operadores definido pelo usuário dotando de mais poder, flexibilidade, melhor performance, e maior integridade [\citenum{15}].
+
+Ao longo do tempo os dados estão em constante mudança e isso faz muitas abordagens serem limitadas, além disso os modelos  existentes desenvolvem aplicações sem criar formas de conexão com outros  modelos de dados. Neste contexto surge a abordagem baseada no uso da linguagem de marcação extensível (XML), um conjunto de regras para definir etiquetas semânticas que dividem um documento em partes e identificam as diferentes parte do documento [\citenum{17}], além disto podem representar relacionamentos complexos, sendo facilmente interpretado e simples de entender, pode  funcionar em distintas plataformas [\citenum{18}]. Assim como a facilidade para a troca de informação pela Internet, graças à flexibilidade do formato XML para a representação de dados biológicos.
+
+
+\section{Estudo Comparativo }
+
+Nesta seção é apresentado quatro modelos conceituais para tratar dados biológicos e em seguida é realizada uma análise comparativa enfatizando as vantagens e desvantagens entre os modelos.
+
+\subsection{Modelo Conceitual de Informação Genômica}
+O modelo conceitual de informação genômica [\citenum{13}] fornece um modelo para dados genômicos que pode ser usado nas atividades de implementação de um projeto da biologia molecular. Além disso os  modelos fornecidos podem ser usado para descrever resultados experimentais. Por outro lado o modelo representa experiências relacionadas aos acontecimentos naturais ou modificações induzidas ao genoma envolto que descreve as possíveis modificações e as consequências das modificações para o organismo. Esta abordagem usou o modelo orientado a objetos como se pode ver no diagrama da Figura 3.1 e 3.2 e a notação de diagramas de classes da \textit{Unifided Modeling Language} (UML), a  implementação desta abordagem foi realizada no  banco de dados orientado a objetos POET [\citenum{21}] que usa os padrões da \textit{Object Database Management Group} (ODMG).
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=280]{./chapters/grafico02/esquema_dados_genomicos.jpeg}
+  \end{center}
+  \caption{Ilustra um diagrama do modelo conceitual de informação genômica para genomas}
+  \label{fig:ejemplo}
+\end{figure}
+
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=300]{./chapters/grafico02/esquema_alelos.jpeg}
+  \end{center}
+  \caption{Ilustra um diagrama do modelo conceitual de informação genômica para alelos}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{Modelo de Dados Conceitual para Bioinformática}
+Nesta abordagem [\citenum{14}] foi utilizada dois modelos para representar os dados biológicos, fazendo comparações entre os modelos Entidade Relacionamento e modelo Orientado a Objetos. O modelo Entidade Relacionamento é usado para representar o esquema geral do banco de  dados (Figura 3.3) por sua facilidade de mapeamento aos esquemas de banco de dados em especial esquemas relacionais. Por outro lado a coleção de diagramas  de classes de UML suportam o projeto orientado a objetos das aplicações, onde o mapeamento das classes é direto a uma plataforma de implementação orientada a objetos.  
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=200]{./chapters/grafico02/er_biologico.jpeg}
+  \end{center}
+  \caption{Ilustra um diagrama ER do modelo de dados conceitual para bioinformática}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{Conceitos de Modelagem de Dados Bioinformaticos Melhorado e Seu Uso em Integração de Consulta}
+A abordagem faz uso do modelo Entidade Relacionamento Melhorado (ERR) a fim de se acomodar as características especiais das sequência de DNA e proteínas. A abordagem adiciona três tipos de relacionamentos especiais: relacionamento ordenado, relacionamento de processo e o relacionamento de molécula espacial (como a estrutura ternária da proteína). Além disto propõem a adição de outras características para melhorar o poder da modelagem para dados da biologia molecular (ver Figura 3.4). Esse artigo também apresenta como é mapeado o modelo para sua implementação num banco de dados relacional al [\citenum{8}].
+
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=350]{./chapters/grafico02/diagrama_eer.jpeg}
+  \end{center}
+  \caption{(a) Ilustra a sequencia de DNA (b) Modelo EER do DNA, gene  e base}
+  \label{fig:ejemplo}
+\end{figure}
+
+\subsection{Modelagem de Dados Genômicos com Tipos de Atributos, Balanceando Estabilidade e Manutenibilidade}
+Esta abordagem usa o modelo orientado a objetos dinâmicos (DOM) o qual é uma extensão do modelo orientado a objetos. A abordagem faz uso do DOM adicionando-lhe algumas características como a separação de modelos, onde foram considerados 4 modelos: o modelo operacional, modelo de conhecimento, meta modelo e o modelo de informação como se pode observar na Figura 3.4. O modelo operacional e o metamodelo são  quem definem a estrutura dos outros modelos respectivamente, observando que o modelo de conhecimento contém os dados concretos do modelo operacional onde podem ser feitos as inserções, modificações ou eliminações. O modelo de conhecimento é a chave da flexibilidade da abordagem onde o uso de componentes de software é indispensável para sua administração. O uso do modelo operacional junto com o metamodelo fazem aos sistemas que usam esta abordagem flexível a uma possível mudança ou adição de novos conhecimentos no domínio [\citenum{15}]. Na Figura 3.5 se ilustra algumas propriedades inerentes das moléculas de DNA e Proteínas. 
+
+
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=250]{./chapters/grafico02/diferentes_modelos_dom.jpeg}
+  \end{center}
+  \caption{Ilustra o diagrama dos quatro diferentes modelos.}
+  \label{fig:ejemplo}
+\end{figure}
+\begin{figure}[htb]
+  \begin{center}
+  \includegraphics[width=400]{./chapters/grafico02/modelos_propriedades_dom.jpeg}
+  \end{center}
+  \caption{Ilustra o diagrama do modelo das propriedades}
+  \label{fig:ejemplo}
+\end{figure}
+
+Após essa breve apresentação dos  modelos de dados biológicos a Tabela 3.1 faz uma comparação das abordagens estudadas comparando os modelos de dados usados, grau de complexidade assim como o que Sistema de Gerenciamento de  Banco de Dados que foi usado para a sua implementação.
+
+
+\begin{table}[htb]
+  \centering
+  \large
+  \setlength{\arrayrulewidth}{2\arrayrulewidth}
+  \setlength{\belowcaptionskip}{10pt}
+  \caption{\ Tabela de comparativa de abordagens.}
+  \begin{tabular}{|p{6cm}|c|c|p{3.5cm}|}
+     \hline
+     ""& \textbf{Abordagem} & \textbf{Complexidade} & \textbf{Implementação} \\
+     \hline
+     Modelo Conceitual de  Informação Genômica & OO & Baixo & PEOT\\
+     \hline
+     Modelo de Dado Conceitual para Bioinformática & ER-OO & Baixo & PEOT\\
+     \hline
+     Conceitos de Modelagem de dados Bioinformáticos  
+     Melhorado e seu Uso em Integração de Consulta & ER-EER & Meio & Qualquer SGBD relacional\\
+     \hline
+     Modelagem de Dados Genômicos com Tipos de Atributos, 
+     Balanceando Estabilidade e Manutenibilidade & OOM-DOM & Alto & MCK\\
+     \hline
+  \end{tabular}
+\end{table}
+
+Vale ressaltar que nas abordagens apresentadas é  pouco  comum usar um único modelo de dados, por exemplo no modelo  [\citenum{8}], não só é usado o modelo EER, mas também é usado algumas características do modelo ER. Do mesmo jeito o modelo [\citenum{15}] faz uso extensivo do modelo DOM, mas no seu modelo operacional e metamodelo são usados o modelo OO. Por outro lado, na implementação destas abordagens foram usados o banco de dados orientado a objetos POET [\citenum{21}], banco de dados relacionais e o framework  Kit de Computação Molecular (MCK) [\citenum{15}].
+
+Revisando a literatura, verificou-se que todos os  modelos de dados para representar dados biológicos foram pensados para projetos de sequenciamentos Sanger, por tanto esses modelos carecem de funcionalidades importantes para o desenvolvimento dos projetos de sequenciamento de alto desempenho. É importante que os modelos de dados sejam capazes de representar os dados gerados pelos novos sequenciadores e acompanhar os resultados parciais das análises ao longo do desenvolvimento do projeto.
+
+A inclusão de novas características ausentes nos modelos estudados, assim como modelos  específicos para cada fase de um \textit{pipeline} de um projeto de sequenciamento de alto desempenho, tem como objetivo tornar mais eficientes a recuperação e armazenamento dos dados durante o processamento de um \textit{pipeline}. 
+
+Pretende-se, para as fases de Submissão, Mapeamento e Anotação desenvolver mecanismos de mapeamento dos modelos conceituais ao modelo lógico para a implementação em um sistema de banco de dados que possa implementar adequadamente os modelos  mapeados das diferentes etapas do \textit{pipeline}, assim como  o armazenamento e a recuperação eficientemente dos mesmos.
+
+\newpage
+
+\section{Metodologia}
+
+\textit{Primeira fase : Estudo}
+Inicialmente, será realizado o estudo dos desafios da área da bioinformática para o armazenamento de dados. O objetivo desta fase é conseguir entender as características que deverá ter os modelos  para as diferentes fases do \textit{pipeline}  de sequenciamento  de genoma de alto desempenho.
+
+\textit{Segunda  fase : Especificação do Modelo}
+Na fase 2 deve se especificar os modelos de dados para as diferentes fases de um \textit{pipeline}  de sequenciamento de genoma de alto desempenho, especificando o tipo ou tipos de modelo de dados que será usado para representar os dados gerados por cada fase do \textit{pipeline}.
+
+
+\textit{Terceira fase : Implementação}
+Na fase 3  se definirá  as características necessárias do sistemas de banco de dados para a implementação dos modelos de dados propostos segundo as especificações, características e definições feitas na fase 2. Nesta fase é definida os sistemas de  armazenamento de cada fase do \textit{pipeline} de um sequenciamento de genoma de alto desempenho.
+
+
+\textit{Quarta fase : Testes}
+Nesta fase se pretende testar os modelos de cada fase do \textit{pipeline} de um sequenciamento de alto desempenho no estudo de caso. O estudo de caso será um projeto de sequenciamento do departamento de Biologia Molecular da UnB. Com esses dados reais pretende-se validar os modelos propostos.
+
+
+\textit{Quinta fase : Avaliação e Correção}
+Na fase 5  se pretende avaliar o desempenho em espaço, assim como avaliar os problemas que surgiram na fase anterior e sua pronta correção e reavaliação. 
+
+
+\textit{Sexta fase : Publicação e Defesa da Dissertação}
+Na fase 6  se pretende discutir os resultados conseguidos, assim como apresentar o trabalho em congressos e a elaboração da dissertação. O objetivo desta fase é a apresentação do trabalho à comunidade  através de meios formais e defesa da dissertação. 
+
+\section{Cronograma de Execução}
+
+Durante esse primeiro ano do mestrado cursei os 24 créditos de disciplinas necessários como requisitos para a obtenção do título de mestre de acordo com o regimento do Programa de Pós-graduação em Informática da UnB.
+Nesse período foi realizado também um levantamento bibliográfico, a definição  dos objetivos da pesquisa e a comparação de algumas abordagens. As próximas etapas desse projeto são apresentadas a seguir.
+
+Etapas (Tabela 3.2)
+
+ 	\begin{enumerate}
+    \item Estudo.
+    \item Proposta do modelo.
+    \item Implementação
+    \item Testes.
+    \item Discussão.
+    \item Elaboração da dissertação.
+    \item Escrever o artigo para congressos.
+    \item Defesa da dissertação.
+    \end{enumerate}
+
+\begin{table}[htb]
+  \centering
+  \large
+  \setlength{\arrayrulewidth}{2\arrayrulewidth}
+  \setlength{\belowcaptionskip}{10pt}
+  \caption{\ Cronograma de atividades.}
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+     \hline
+	 \multicolumn{13}{|c|}{\textbf{Ano 2011}} \\
+     \hline
+     \textbf{Etapa} & \textbf{Jan} & \textbf{Fev} & \textbf{Mar} &
+     \textbf{Abr} & \textbf{Mai} & \textbf{Jun} & \textbf{jul} &
+     \textbf{Ago} & \textbf{Set} & \textbf{Out} & \textbf{Nov} & \textbf{Dez} \\
+     \hline
+     1 & X & X & X & "" & "" & "" & "" & "" & "" & "" & "" & ""\\    
+     \hline
+     2 & "" & "" & "" & X & X & X & "" & "" & "" & "" & "" & ""\\    
+     \hline
+     3 & "" & "" & "" & "" & X & X & X & X & "" & "" & "" & ""\\
+     \hline
+     4 & "" & "" & "" & "" & "" & "" & X & X & X & "" & "" & ""\\
+     \hline
+     5 & "" & "" & "" & "" & "" & "" & "" & X & X & "" & "" & ""\\
+     \hline
+     6 & "" & "" & "" & "" & "" & "" & "" & "" & "" & X & X & ""\\
+     \hline
+     7 & "" & "" & "" & "" & "" & "" & "" & X & X & "" & "" & X\\
+     \hline
+     8 & "" & "" & "" & "" & "" & "" & "" & "" & "" & "" & "" & X\\
+     \hline
+  \end{tabular}
+\end{table}
+
+
+		
+
+
+
+ 
+
+	
+

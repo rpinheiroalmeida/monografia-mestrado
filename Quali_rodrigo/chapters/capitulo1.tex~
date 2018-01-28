@@ -1,0 +1,48 @@
+%\textual
+\chapter{Introdução}
+
+\section{Contextualização} 
+
+A bioinformática é uma área relativamente nova e um dos seus desafios é o tratamento do grande volume de dados biológicos gerados hoje pelos sequenciadores de alto desempenho. Os gigabytes de sequ\^encias de DNA de cada experimento precisam ser armazenados e alinhados. Enquanto o Projeto do Genoma Humano demorou 10 anos e custou \$300 milhões de dólares [\cite{19}], atualmente os novos projetos ficaram mais baratos e geram maiores quantidades de dados. Como exemplo desses projetos, tem-se o “Genoma Pessoal”, de grande ajuda para finalidades médicas com diagnósticos mais precisos [\citenum{1}]. Para este e outros projetos, serão usados os sequenciadores de alto desempenho, tais como Illumina Solexa e 454-Roche.
+
+Neste contexto, com esse grande volume de dados, o uso de Sistemas de Gerenciamento de Banco de Dados (SGBD) ou sistema de arquivos que pode estar distribuídos ou a integração desses dois tipos de armazenamento tem um papel crucial para o desenvolvimento. Além desse problema esses dados precisam de modelos adequados que representem a informação gerada nos laboratórios de biologia molecular.
+
+Sistemas de \textit{pipelines} têm sido criados para lidar com as diferentes fases de um projeto de sequenciamento de genoma. A dificuldade de armazenamento dos dados gerados pelas diferentes fases, pelos diferentes programas e os diferentes formatos de um \textit{pipeline} de sequenciamento de alto desempenho é o foco de nosso trabalho. Pretende-se na dissertação do mestrado propor modelos de dados para as diferentes fases de um \textit{pipeline} de sequenciamento de alto desempenho assim como sugerindo sua melhor implementação para os projetos de sequenciamento do departamento da Biologia Molecular da UNB.
+
+Os casos de uso onde pretende-se implementar são em projetos financiados pelo PRONEX/ FAPDF/CNPq. O primeiro projeto é “Plataforma Tecnológica para Produção de Proteínas Recombinantes em \textit{Pichia pastoris}” a cargo do Prof. Fernando Araripe Gonçalves Torres do instituto de Biologia da UnB, onde pretende-se fazer analises de transcriptomica para avaliar a expressão dos genes com a finalidade de otimizar a produção da levedura em processos de biotecnologia. O segundo projeto é “Desenvolvimento de biofármacos e caracterização biológica dos efeitos imunorreguladores de anticorpos anti-CD3” a cargo do Prof. Marcelo de Macedo Brígido do instituto de Biologia da UnB, onde a finalidade é de comparar  o transcriptoma de células do sistema imunológico de pacientes normais, os que  receberam transplante de órgão em tratamento com biofármacos (imunossupressores e anticorpos anti-CD3) e os que não rejeitam o órgão transplantado (pacientes tolerantes operacionais). Sera usado o sequenciador de alto desempenho Illumina Solexa para sequenciar os transcriptomas tanto para o projeto da \textit{Pichia pastoris} quanto para transcriptoma humano.
+
+
+\section{Motivação}
+Os \textit{pipelines} para projetos e em especial para projetos de sequenciamento de genomas são adotados como meio para administrar, especificar e coordenar a execução de experimentos que envolvem diferentes fases com características particulares e com fins específicos. Eles permitem a representação e execução de tarefas que usam dados e ferramentas heterogêneas.
+
+Há  diversos sistemas para gerenciar experiências da bioinformática. Esses sistemas cumprem seus propósito fornecendo ferramentas para a submissão, mapeamento, montagem e anotação de um projeto de genoma. Tem-se propostas para o uso de  diferentes \textit{pipelines}, mas a maioria estão focados no uso de sistemas sem preocupar-se com os dados gerados em cada fase. Em relação a esses aspectos é altamente útil ter modelos conceituais para dados biológicos que possam representar esses dados de forma adequada para depois ser mapeadas em algum sistema de banco de dados.
+
+
+Acreditamos  que  essa pesquisa na área de modelos de dados biológicos aplicados às fases de um \textit{pipeline} de sequenciamento de genoma de alto desempenho será importante para os projetos de sequenciamento atuais e futuros.
+
+\section{Objetivo}
+\subsection{Objetivo Geral}
+
+Este trabalho tem como objetivo desenvolver um modelo de dados para um \textit{pipeline} de sequenciamento de genoma alto desempenho assim como a sua implementaçã
+
+\subsection{Objetivos Específicos}
+
+No intuito de atingir nosso  objetivo geral, foram definidos  alguns objetivos específicos:
+
+ \begin{enumerate}
+    \item Especificar cada modelo de dado para as diferentes etapas de um \textit{pipeline} de sequenciamento de alto desempenho.
+    \item Selecionar e montar a base de dados onde se realizará a implementação dos modelos propostos.
+    \item Definir procedimentos para a implementação dos diferentes modelos em cada etapa de um \textit{pipeline} de sequenciamento de genomas de alto desempenho.
+    \item Implementar o modelo de dados no estudo de caso da Biologia Molecular de UnB.  
+    \item Analisar os resultados obtidos durante e depois da implementação.   
+    \end{enumerate}
+    
+
+		
+
+
+
+ 
+
+	
+
