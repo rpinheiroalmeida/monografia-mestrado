@@ -1,0 +1,159 @@
+digraph G {graph [
+fontsize = 500,
+rankdir=BT,
+size = 900];
+node [	shape = polygon,
+distortion = 0.0,
+orientation = 0.0,
+skew = 0.0,
+style = filled ];
+"A001_Filtro_Rim"[shape=box, color=orange];
+"A002_Filtro_Rim"[shape=box, color=orange];
+"A003_Filtro_Rim"[shape=box, color=orange];
+"A004_Filtro_Figado"[shape=box, color=orange];
+"A005_Filtro_Figado"[shape=box, color=orange];
+"A006_Filtro_Figado"[shape=box, color=orange];
+"A007_Alinhamento_Rim"[shape=box, color=orange];
+"A008_Alinhamento_Rim"[shape=box, color=orange];
+"A009_Alinhamento_Rim"[shape=box, color=orange];
+"A010_Alinhamento_Figado"[shape=box, color=orange];
+"A011_Alinhamento_Figado"[shape=box, color=orange];
+"A012_Alinhamento_Figado"[shape=box, color=orange];
+"A013_Juncao_Rim"[shape=box, color=orange];
+"A014_Juncao_Figado"[shape=box, color=orange];
+"A015_Ordenacao_Rim"[shape=box, color=orange];
+"A016_Ordenacao_Figado"[shape=box, color=orange];
+"AG001_EXECUTOR"[shape=house];
+
+"SRR002320"[shape=ellipse, color=deepskyblue];
+"SRR002324"[shape=ellipse, color=deepskyblue];
+"SRR002325"[shape=ellipse, color=deepskyblue];
+"SRR002323"[shape=ellipse, color=deepskyblue];
+"SRR002322"[shape=ellipse, color=deepskyblue];
+"SRR002321"[shape=ellipse, color=deepskyblue];
+"hg19"[shape=ellipse, color=deepskyblue];
+"SRR002320_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002324_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002325_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002321_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002322_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002323_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002320_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002320_accepted_hits"[shape=ellipse, color=deepskyblue];
+"SRR002321_accepted_hits"[shape=ellipse, color=deepskyblue];
+"SRR002322_accepted_hits"[shape=ellipse, color=deepskyblue];
+"SRR002323_accepted_hits"[shape=ellipse, color=deepskyblue];
+"SRR002324_accepted_hits"[shape=ellipse, color=deepskyblue];
+"SRR002325_accepted_hits"[shape=ellipse, color=deepskyblue];
+"rim_juncao"[shape=ellipse, color=deepskyblue];
+"figado_juncao"[shape=ellipse, color=deepskyblue];
+"rim_ordenado"[shape=ellipse, color=deepskyblue];
+"figado_juncao"[shape=ellipse, color=deepskyblue];
+"figado_ordenado"[shape=ellipse, color=deepskyblue];
+
+"A001_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A001_Filtro_Rim" -> "SRR002320"[style=dotted, label=used];
+"SRR002320_filtered" -> "A001_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002320_filtered" -> "SRR002320"[label=wasDerivedFrom];
+
+"A002_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A002_Filtro_Rim" -> "SRR002324"[style=dotted, label=used];
+"SRR002324_filtered" -> "A002_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002324_filtered" -> "SRR002324"[label=wasDerivedFrom];
+
+"A003_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A003_Filtro_Rim" -> "SRR002325"[style=dotted, label=used];
+"SRR002325_filtered" -> "A003_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002325_filtered" -> "SRR002325"[label=wasDerivedFrom];
+
+"A004_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A004_Filtro_Figado" -> "SRR002321"[style=dotted, label=used];
+"SRR002321_filtered" -> "A004_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002321_filtered" -> "SRR002321"[label=wasDerivedFrom];
+
+"A005_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A005_Filtro_Figado" -> "SRR002322"[style=dotted, label=used];
+"SRR002322_filtered" -> "A005_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002322_filtered" -> "SRR002322"[label=wasDerivedFrom];
+
+"A006_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A006_Filtro_Figado" -> "SRR002323"[style=dotted, label=used];
+"SRR002323_filtered" -> "A006_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002323_filtered" -> "SRR002323"[label=wasDerivedFrom];
+
+"A007_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A007_Alinhamento_Rim" -> "SRR002320_filtered"[style=dotted, label=used];
+"A007_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002320_accepted_hits" -> "A007_Alinhamento_Rim"[label=wasGeneratedBy];
+"SRR002320_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002320_accepted_hits" -> "SRR002320_filtered"[label=wasDerivedFrom];
+
+"A008_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A008_Alinhamento_Rim" -> "SRR002324_filtered"[style=dotted, label=used];
+"A008_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002324_accepted_hits" -> "A008_Alinhamento_Rim"[label=wasGeneratedBy];
+"SRR002324_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002324_accepted_hits" -> "SRR002324_filtered"[label=wasDerivedFrom];
+
+
+
+"A009_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A009_Alinhamento_Rim" -> "SRR002325_filtered"[style=dotted, label=used];
+"A009_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002325_accepted_hits" -> "A009_Alinhamento_Rim"[label=wasGeneratedBy];
+"SRR002325_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002325_accepted_hits" -> "SRR002325_filtered"[label=wasDerivedFrom];
+
+
+"A010_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A010_Alinhamento_Figado" -> "SRR002323_filtered"[style=dotted, label=used];
+"A010_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002323_accepted_hits" -> "A010_Alinhamento_Figado"[label=wasGeneratedBy];
+"SRR002323_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002323_accepted_hits" -> "SRR002323_filtered"[label=wasDerivedFrom];
+
+
+"A011_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A011_Alinhamento_Figado" -> "SRR002322_filtered"[style=dotted, label=used];
+"A011_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002322_accepted_hits" -> "A011_Alinhamento_Figado"[label=wasGeneratedBy];
+"SRR002322_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002322_accepted_hits" -> "SRR002322_filtered"[label=wasDerivedFrom];
+
+
+"A012_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A012_Alinhamento_Figado" -> "SRR002321_filtered"[style=dotted, label=used];
+"A012_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002321_accepted_hits" -> "A012_Alinhamento_Figado"[label=wasGeneratedBy];
+"SRR002321_accepted_hits" -> "hg19"[label=wasDerivedFrom];
+"SRR002321_accepted_hits" -> "SRR002321_filtered"[label=wasDerivedFrom];
+
+"A013_Juncao_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A013_Juncao_Rim" -> "SRR002320_accepted_hits"[style=dotted, label=used];
+"A013_Juncao_Rim" -> "SRR002324_accepted_hits"[style=dotted, label=used];
+"A013_Juncao_Rim" -> "SRR002325_accepted_hits"[style=dotted, label=used];
+"rim_juncao" -> "A013_Juncao_Rim"[label=wasGeneratedBy];
+"rim_juncao" -> "SRR002320_accepted_hits"[label=wasDerivedFrom];
+"rim_juncao" -> "SRR002324_accepted_hits"[label=wasDerivedFrom];
+"rim_juncao" -> "SRR002325_accepted_hits"[label=wasDerivedFrom];
+
+"A014_Juncao_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A014_Juncao_Figado" -> "SRR002321_accepted_hits"[style=dotted, label=used];
+"A014_Juncao_Figado" -> "SRR002322_accepted_hits"[style=dotted, label=used];
+"A014_Juncao_Figado" -> "SRR002323_accepted_hits"[style=dotted, label=used];
+"figado_juncao" -> "A014_Juncao_Figado"[label=wasGeneratedBy];
+"figado_juncao" -> "SRR002321_accepted_hits"[label=wasDerivedFrom];
+"figado_juncao" -> "SRR002322_accepted_hits"[label=wasDerivedFrom];
+"figado_juncao" -> "SRR002323_accepted_hits"[label=wasDerivedFrom];
+
+"A015_Ordenacao_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A015_Ordenacao_Rim" -> "rim_juncao"[style=dotted, label=used];
+"rim_ordenado" -> "A015_Ordenacao_Rim"[label=wasGeneratedBy];
+"rim_ordenado" -> "rim_juncao"[label=wasDerivedFrom];
+
+"A016_Ordenacao_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A016_Ordenacao_Figado" -> "figado_juncao"[style=dotted, label=used];
+"figado_ordenado" -> "A016_Ordenacao_Figado"[label=wasGeneratedBy];
+"figado_ordenado" -> "figado_juncao"[label=wasDerivedFrom];
+
+}

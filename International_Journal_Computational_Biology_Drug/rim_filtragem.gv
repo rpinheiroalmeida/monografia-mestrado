@@ -1,0 +1,61 @@
+digraph G {graph [
+fontsize = 500,
+rankdir=BT,
+size = 900];
+node [	shape = polygon,
+distortion = 0.0,
+orientation = 0.0,
+skew = 0.0,
+style = filled ];
+"A001_Filtro_Rim"[shape=box, color=orange];
+"A002_Filtro_Rim"[shape=box, color=orange];
+"A003_Filtro_Rim"[shape=box, color=orange];
+"A004_Filtro_Figado"[shape=box, color=orange];
+"A005_Filtro_Figado"[shape=box, color=orange];
+"A006_Filtro_Figado"[shape=box, color=orange];
+"AG001_EXECUTOR"[shape=house];
+
+"SRR002320"[shape=ellipse, color=deepskyblue];
+"SRR002324"[shape=ellipse, color=deepskyblue];
+"SRR002325"[shape=ellipse, color=deepskyblue];
+"SRR002323"[shape=ellipse, color=deepskyblue];
+"SRR002322"[shape=ellipse, color=deepskyblue];
+"SRR002321"[shape=ellipse, color=deepskyblue];
+"SRR002320_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002324_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002325_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002321_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002322_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002323_filtered"[shape=ellipse, color=deepskyblue];
+"SRR002320_filtered"[shape=ellipse, color=deepskyblue];
+
+"A001_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A001_Filtro_Rim" -> "SRR002320"[style=dotted, label=used];
+"SRR002320_filtered" -> "A001_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002320_filtered" -> "SRR002320"[label=wasDerivedFrom];
+
+"A002_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A002_Filtro_Rim" -> "SRR002324"[style=dotted, label=used];
+"SRR002324_filtered" -> "A002_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002324_filtered" -> "SRR002324"[label=wasDerivedFrom];
+
+"A003_Filtro_Rim" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A003_Filtro_Rim" -> "SRR002325"[style=dotted, label=used];
+"SRR002325_filtered" -> "A003_Filtro_Rim"[label=wasGeneratedBy];
+"SRR002325_filtered" -> "SRR002325"[label=wasDerivedFrom];
+
+"A004_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A004_Filtro_Figado" -> "SRR002321"[style=dotted, label=used];
+"SRR002321_filtered" -> "A004_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002321_filtered" -> "SRR002321"[label=wasDerivedFrom];
+
+"A005_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A005_Filtro_Figado" -> "SRR002322"[style=dotted, label=used];
+"SRR002322_filtered" -> "A005_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002322_filtered" -> "SRR002322"[label=wasDerivedFrom];
+
+"A006_Filtro_Figado" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A006_Filtro_Figado" -> "SRR002323"[style=dotted, label=used];
+"SRR002323_filtered" -> "A006_Filtro_Figado"[label=wasGeneratedBy];
+"SRR002323_filtered" -> "SRR002323"[label=wasDerivedFrom];
+}

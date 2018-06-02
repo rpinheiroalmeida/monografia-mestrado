@@ -1,0 +1,158 @@
+digraph G {graph [
+fontsize = 500,
+rankdir=BT,
+size = 900];
+node [	shape = polygon,
+distortion = 0.0,
+orientation = 0.0,
+skew = 0.0];
+"A001_Filtro_Rim"[shape=box];
+"A002_Filtro_Rim"[shape=box];
+"A003_Filtro_Rim"[shape=box];
+"A004_Filtro_Figado"[shape=box];
+"A005_Filtro_Figado"[shape=box];
+"A006_Filtro_Figado"[shape=box];
+"A007_Alinhamento_Rim"[shape=box];
+"A008_Alinhamento_Rim"[shape=box];
+"A009_Alinhamento_Rim"[shape=box];
+"A010_Alinhamento_Figado"[shape=box];
+"A011_Alinhamento_Figado"[shape=box];
+"A012_Alinhamento_Figado"[shape=box];
+"A013_Juncao_Rim"[shape=box];
+"A014_Juncao_Figado"[shape=box];
+"A015_Ordenacao_Rim"[shape=box];
+"A016_Ordenacao_Figado"[shape=box];
+"AG001_EXECUTOR"[shape=house];
+
+"SRR002320"[shape=ellipse];
+"SRR002324"[shape=ellipse];
+"SRR002325"[shape=ellipse];
+"SRR002323"[shape=ellipse];
+"SRR002322"[shape=ellipse];
+"SRR002321"[shape=ellipse];
+"hg19"[shape=ellipse];
+"SRR002320_filtered"[shape=ellipse];
+"SRR002324_filtered"[shape=ellipse];
+"SRR002325_filtered"[shape=ellipse];
+"SRR002321_filtered"[shape=ellipse];
+"SRR002322_filtered"[shape=ellipse];
+"SRR002323_filtered"[shape=ellipse];
+"SRR002320_filtered"[shape=ellipse];
+"SRR002320_accepted_hits"[shape=ellipse];
+"SRR002321_accepted_hits"[shape=ellipse];
+"SRR002322_accepted_hits"[shape=ellipse];
+"SRR002323_accepted_hits"[shape=ellipse];
+"SRR002324_accepted_hits"[shape=ellipse];
+"SRR002325_accepted_hits"[shape=ellipse];
+"rim_juncao"[shape=ellipse];
+"figado_juncao"[shape=ellipse];
+"rim_ordenado"[shape=ellipse];
+"figado_juncao"[shape=ellipse];
+"figado_ordenado"[shape=ellipse];
+
+"A001_Filtro_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A001_Filtro_Rim" -> "SRR002320"[style=dotted, label=used];
+"SRR002320_filtered" -> "A001_Filtro_Rim"[label=WGB];
+"SRR002320_filtered" -> "SRR002320"[label=WDF];
+
+"A002_Filtro_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A002_Filtro_Rim" -> "SRR002324"[style=dotted, label=used];
+"SRR002324_filtered" -> "A002_Filtro_Rim"[label=WGB];
+"SRR002324_filtered" -> "SRR002324"[label=WDF];
+
+"A003_Filtro_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A003_Filtro_Rim" -> "SRR002325"[style=dotted, label=used];
+"SRR002325_filtered" -> "A003_Filtro_Rim"[label=WGB];
+"SRR002325_filtered" -> "SRR002325"[label=WDF];
+
+"A004_Filtro_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A004_Filtro_Figado" -> "SRR002321"[style=dotted, label=used];
+"SRR002321_filtered" -> "A004_Filtro_Figado"[label=WGB];
+"SRR002321_filtered" -> "SRR002321"[label=WDF];
+
+"A005_Filtro_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A005_Filtro_Figado" -> "SRR002322"[style=dotted, label=used];
+"SRR002322_filtered" -> "A005_Filtro_Figado"[label=WGB];
+"SRR002322_filtered" -> "SRR002322"[label=WDF];
+
+"A006_Filtro_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A006_Filtro_Figado" -> "SRR002323"[style=dotted, label=used];
+"SRR002323_filtered" -> "A006_Filtro_Figado"[label=WGB];
+"SRR002323_filtered" -> "SRR002323"[label=WDF];
+
+"A007_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A007_Alinhamento_Rim" -> "SRR002320_filtered"[style=dotted, label=used];
+"A007_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002320_accepted_hits" -> "A007_Alinhamento_Rim"[label=WGB];
+"SRR002320_accepted_hits" -> "hg19"[label=WDF];
+"SRR002320_accepted_hits" -> "SRR002320_filtered"[label=WDF];
+
+"A008_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A008_Alinhamento_Rim" -> "SRR002324_filtered"[style=dotted, label=used];
+"A008_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002324_accepted_hits" -> "A008_Alinhamento_Rim"[label=WGB];
+"SRR002324_accepted_hits" -> "hg19"[label=WDF];
+"SRR002324_accepted_hits" -> "SRR002324_filtered"[label=WDF];
+
+
+
+"A009_Alinhamento_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A009_Alinhamento_Rim" -> "SRR002325_filtered"[style=dotted, label=used];
+"A009_Alinhamento_Rim" -> "hg19"[style=dotted, label=used];
+"SRR002325_accepted_hits" -> "A009_Alinhamento_Rim"[label=WGB];
+"SRR002325_accepted_hits" -> "hg19"[label=WDF];
+"SRR002325_accepted_hits" -> "SRR002325_filtered"[label=WDF];
+
+
+"A010_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A010_Alinhamento_Figado" -> "SRR002323_filtered"[style=dotted, label=used];
+"A010_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002323_accepted_hits" -> "A010_Alinhamento_Figado"[label=WGB];
+"SRR002323_accepted_hits" -> "hg19"[label=WDF];
+"SRR002323_accepted_hits" -> "SRR002323_filtered"[label=WDF];
+
+
+"A011_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A011_Alinhamento_Figado" -> "SRR002322_filtered"[style=dotted, label=used];
+"A011_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002322_accepted_hits" -> "A011_Alinhamento_Figado"[label=WGB];
+"SRR002322_accepted_hits" -> "hg19"[label=WDF];
+"SRR002322_accepted_hits" -> "SRR002322_filtered"[label=WDF];
+
+
+"A012_Alinhamento_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A012_Alinhamento_Figado" -> "SRR002321_filtered"[style=dotted, label=used];
+"A012_Alinhamento_Figado" -> "hg19"[style=dotted, label=used];
+"SRR002321_accepted_hits" -> "A012_Alinhamento_Figado"[label=WGB];
+"SRR002321_accepted_hits" -> "hg19"[label=WDF];
+"SRR002321_accepted_hits" -> "SRR002321_filtered"[label=WDF];
+
+"A013_Juncao_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A013_Juncao_Rim" -> "SRR002320_accepted_hits"[style=dotted, label=used];
+"A013_Juncao_Rim" -> "SRR002324_accepted_hits"[style=dotted, label=used];
+"A013_Juncao_Rim" -> "SRR002325_accepted_hits"[style=dotted, label=used];
+"rim_juncao" -> "A013_Juncao_Rim"[label=WGB];
+"rim_juncao" -> "SRR002320_accepted_hits"[label=WDF];
+"rim_juncao" -> "SRR002324_accepted_hits"[label=WDF];
+"rim_juncao" -> "SRR002325_accepted_hits"[label=WDF];
+
+"A014_Juncao_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A014_Juncao_Figado" -> "SRR002321_accepted_hits"[style=dotted, label=used];
+"A014_Juncao_Figado" -> "SRR002322_accepted_hits"[style=dotted, label=used];
+"A014_Juncao_Figado" -> "SRR002323_accepted_hits"[style=dotted, label=used];
+"figado_juncao" -> "A014_Juncao_Figado"[label=WGB];
+"figado_juncao" -> "SRR002321_accepted_hits"[label=WDF];
+"figado_juncao" -> "SRR002322_accepted_hits"[label=WDF];
+"figado_juncao" -> "SRR002323_accepted_hits"[label=WDF];
+
+"A015_Ordenacao_Rim" -> "AG001_EXECUTOR"[label=WAW];
+"A015_Ordenacao_Rim" -> "rim_juncao"[style=dotted, label=used];
+"rim_ordenado" -> "A015_Ordenacao_Rim"[label=WGB];
+"rim_ordenado" -> "rim_juncao"[label=WDF];
+
+"A016_Ordenacao_Figado" -> "AG001_EXECUTOR"[label=WAW];
+"A016_Ordenacao_Figado" -> "figado_juncao"[style=dotted, label=used];
+"figado_ordenado" -> "A016_Ordenacao_Figado"[label=WGB];
+"figado_ordenado" -> "figado_juncao"[label=WDF];
+
+}

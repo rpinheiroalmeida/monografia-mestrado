@@ -1,0 +1,88 @@
+digraph G {graph [
+fontsize = 36,
+rankdir=BT,
+size = 12];
+node [	shape = polygon,
+distortion = 0.0,
+orientation = 0.0,
+skew = 0.0,
+color = white,
+style = filled ];
+"A001_Filter_kidney"[shape=box, color=orange];
+"C001_kidney"[shape=ellipse, color=deepskyblue];
+"A001_Filter_kidney" -> "C001_kidney"[style=dotted, label=used];
+"C002_kidney"[shape=ellipse, color=deepskyblue];
+"A001_Filter_kidney" -> "C002_kidney"[style=dotted, label=used];
+"C003_kidney"[shape=ellipse, color=deepskyblue];
+"A001_Filter_kidney" -> "C003_kidney"[style=dotted, label=used];
+"C007_kidney_Filtrado"[shape=ellipse, color=deepskyblue];
+"C007_kidney_Filtrado" -> "A001_Filter_kidney"[label=wasGeneratedBy];
+"C007_kidney_Filtrado" -> "C001_kidney"[label=wasDerivedFrom];
+"C007_kidney_Filtrado" -> "C002_kidney"[label=wasDerivedFrom];
+"C007_kidney_Filtrado" -> "C003_kidney"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A001_Filter_kidney" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A002_FIilter_Liver"[shape=box, color=orange];
+"C004_Liver"[shape=ellipse, color=deepskyblue];
+"A002_FIilter_Liver" -> "C004_Liver"[style=dotted, label=used];
+"C005_Liver"[shape=ellipse, color=deepskyblue];
+"A002_FIilter_Liver" -> "C005_Liver"[style=dotted, label=used];
+"C006_Liver"[shape=ellipse, color=deepskyblue];
+"A002_FIilter_Liver" -> "C006_Liver"[style=dotted, label=used];
+"C008_Liver_Filtrado"[shape=ellipse, color=deepskyblue];
+"C008_Liver_Filtrado" -> "A002_FIilter_Liver"[label=wasGeneratedBy];
+"C008_Liver_Filtrado" -> "C004_Liver"[label=wasDerivedFrom];
+"C008_Liver_Filtrado" -> "C005_Liver"[label=wasDerivedFrom];
+"C008_Liver_Filtrado" -> "C006_Liver"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A002_FIilter_Liver" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A003_Alignment_kidney"[shape=box, color=orange];
+"C007_kidney_Filtrado"[shape=ellipse, color=deepskyblue];
+"A003_Alignment_kidney" -> "C007_kidney_Filtrado"[style=dotted, label=used];
+"C009_HG"[shape=ellipse, color=deepskyblue];
+"A003_Alignment_kidney" -> "C009_HG"[style=dotted, label=used];
+"C010_kidney_Alignment"[shape=ellipse, color=deepskyblue];
+"C010_kidney_Alignment" -> "A003_Alignment_kidney"[label=wasGeneratedBy];
+"C010_kidney_Alignment" -> "C007_kidney_Filtrado"[label=wasDerivedFrom];
+"C010_kidney_Alignment" -> "C009_HG"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A003_Alignment_kidney" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A004_Alignmet_Liver"[shape=box, color=orange];
+"C008_Liver_Filtrado"[shape=ellipse, color=deepskyblue];
+"A004_Alignmet_Liver" -> "C008_Liver_Filtrado"[style=dotted, label=used];
+"C009_HG"[shape=ellipse, color=deepskyblue];
+"A004_Alignmet_Liver" -> "C009_HG"[style=dotted, label=used];
+"C011_Liver_Alignment"[shape=ellipse, color=deepskyblue];
+"C011_Liver_Alignment" -> "A004_Alignmet_Liver"[label=wasGeneratedBy];
+"C011_Liver_Alignment" -> "C008_Liver_Filtrado"[label=wasDerivedFrom];
+"C011_Liver_Alignment" -> "C009_HG"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A004_Alignmet_Liver" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A005_Ordenation_kidney"[shape=box, color=orange];
+"C010_kidney_Alignment"[shape=ellipse, color=deepskyblue];
+"A005_Ordenation_kidney" -> "C010_kidney_Alignment"[style=dotted, label=used];
+"C012_kidney_Orderly"[shape=ellipse, color=deepskyblue];
+"C012_kidney_Orderly" -> "A005_Ordenation_kidney"[label=wasGeneratedBy];
+"C012_kidney_Orderly" -> "C010_kidney_Alignment"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A005_Ordenation_kidney" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A006_Ordenation_Liver"[shape=box, color=orange];
+"C011_Liver_Alignment"[shape=ellipse, color=deepskyblue];
+"A006_Ordenation_Liver" -> "C011_Liver_Alignment"[style=dotted, label=used];
+"C013_Liver_Orderly"[shape=ellipse, color=deepskyblue];
+"C013_Liver_Orderly" -> "A006_Ordenation_Liver"[label=wasGeneratedBy];
+"C013_Liver_Orderly" -> "C011_Liver_Alignment"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A006_Ordenation_Liver" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+"A007_Differential_Expression"[shape=box, color=orange];
+"C012_kidney_Orderly"[shape=ellipse, color=deepskyblue];
+"A007_Differential_Expression" -> "C012_kidney_Orderly"[style=dotted, label=used];
+"C013_Liver_Orderly"[shape=ellipse, color=deepskyblue];
+"A007_Differential_Expression" -> "C013_Liver_Orderly"[style=dotted, label=used];
+"C014_kidneyXLiver"[shape=ellipse, color=deepskyblue];
+"C014_kidneyXLiver" -> "A007_Differential_Expression"[label=wasGeneratedBy];
+"C014_kidneyXLiver" -> "C012_kidney_Orderly"[label=wasDerivedFrom];
+"C014_kidneyXLiver" -> "C013_Liver_Orderly"[label=wasDerivedFrom];
+"AG001_EXECUTOR"[shape=house, color=gray];
+"A007_Differential_Expression" -> "AG001_EXECUTOR"[label=wasAssociatedWith];
+}
