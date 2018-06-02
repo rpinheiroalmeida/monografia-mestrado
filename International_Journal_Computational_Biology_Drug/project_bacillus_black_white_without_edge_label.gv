@@ -1,0 +1,65 @@
+digraph G {graph [
+fontsize = 36,
+rankdir=BT,
+size = 15];
+node [	shape = polygon,
+distortion = 0.0,
+orientation = 0.0,
+skew = 0.0];
+"A001_Family13_Filtro"[shape=box];
+"A002_Family57_Filtro"[shape=box];
+"A003_Family13_Merge"[shape=box];
+"A004_Family57_Merge"[shape=box];
+"A005_Family13_Alignment"[shape=box];
+"A006_Family57_Alignment"[shape=box];
+"A007_Family13_Graph"[shape=box];
+"A008_Family57_Graph"[shape=box];
+"C001_Family13"[shape=ellipse];
+"C002_Family57"[shape=ellipse];
+"C003_Family13_Filtrado"[shape=ellipse];
+"C004_Family57_Filtrado"[shape=ellipse];
+"C005_ORFS"[shape=ellipse];
+"C006_Family13_ORFS"[shape=ellipse];
+"C007_Family57_ORFS"[shape=ellipse];
+"C008_Family13_Alignment"[shape=ellipse];
+"C009_Family57_Alignment"[shape=ellipse];
+"C010_Family13_Graph"[shape=ellipse];
+"C011_Family57_Graph"[shape=ellipse];
+"ag_rodrigo"[shape=house];
+"A001_Family13_Filtro" -> "ag_rodrigo"[style=dashed];
+"C003_Family13_Filtrado" -> "A001_Family13_Filtro"[arrowhead="empty"];
+"A001_Family13_Filtro" -> "C001_Family13"[style=dotted];
+"A002_Family57_Filtro" -> "ag_rodrigo"[style=dashed];
+"C004_Family57_Filtrado" -> "A002_Family57_Filtro"[arrowhead="empty"];
+"A002_Family57_Filtro" -> "C002_Family57"[style=dotted];
+"A003_Family13_Merge" -> "ag_rodrigo"[style=dashed];
+"C006_Family13_ORFS" -> "A003_Family13_Merge"[arrowhead="empty"];
+"A003_Family13_Merge" -> "C003_Family13_Filtrado"[style=dotted];
+"A003_Family13_Merge" -> "C005_ORFS"[style=dotted];
+"A004_Family57_Merge" -> "ag_rodrigo"[style=dashed];
+"C007_Family57_ORFS" -> "A004_Family57_Merge"[arrowhead="empty"];
+"A004_Family57_Merge" -> "C004_Family57_Filtrado"[style=dotted];
+"A004_Family57_Merge" -> "C005_ORFS"[style=dotted];
+"A005_Family13_Alignment" -> "ag_rodrigo"[style=dashed];
+"C008_Family13_Alignment" -> "A005_Family13_Alignment"[arrowhead="empty"];
+"A005_Family13_Alignment" -> "C006_Family13_ORFS"[style=dotted];
+"A006_Family57_Alignment" -> "ag_rodrigo"[style=dashed];
+"C009_Family57_Alignment" -> "A006_Family57_Alignment"[arrowhead="empty"];
+"A006_Family57_Alignment" -> "C007_Family57_ORFS"[style=dotted];
+"A007_Family13_Graph" -> "ag_rodrigo"[style=dotted, style=dashed];
+"C010_Family13_Graph" -> "A007_Family13_Graph"[arrowhead="empty"];
+"A007_Family13_Graph" -> "C008_Family13_Alignment"[style=dotted];
+"A008_Family57_Graph" -> "ag_rodrigo"[style=dashed];
+"C011_Family57_Graph" -> "A008_Family57_Graph"[arrowhead="empty"];
+"A008_Family57_Graph" -> "C009_Family57_Alignment"[style=dotted];
+"C001_Family13" -> "C003_Family13_Filtrado"[];
+"C002_Family57" -> "C004_Family57_Filtrado"[];
+"C003_Family13_Filtrado" -> "C006_Family13_ORFS"[];
+"C004_Family57_Filtrado" -> "C007_Family57_ORFS"[];
+"C005_ORFS" -> "C007_Family57_ORFS"[];
+"C005_ORFS" -> "C006_Family13_ORFS"[];
+"C006_Family13_ORFS" -> "C008_Family13_Alignment"[];
+"C007_Family57_ORFS" -> "C009_Family57_Alignment"[];
+"C008_Family13_Alignment" -> "C010_Family13_Graph"[];
+"C009_Family57_Alignment" -> "C011_Family57_Graph"[];
+}
